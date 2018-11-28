@@ -1,0 +1,18 @@
+{
+	"name": "phyrexia/cache",
+	"type": "library",
+	"description": "PHP classes for caching singletons",
+	"keywords": ["cache", "memcache", "memcached", "redis"],
+	"authors": [{"name": "Jérémy 'Jejem' Desvages", "email": "jejem@phyrexia.org"}],
+	"license": "MIT",
+	"version": "1.0.0",
+	"require": {
+		"php": ">=5.3"
+	},
+	"suggest": {
+		"ext-memcached": "PHP Memcached extension"
+	},
+	"autoload": {
+		"psr-4": {"Phyrexia\\Cache\\": "src/"}
+	}
+}
