@@ -16,11 +16,11 @@ class Memcached {
 	{
 	}
 
-	public static function getInstance($host_ = NULL, $port_ = NULL)
+	public static function getInstance($host = NULL, $port = NULL)
 	{
 		if (is_null(self::$instance) || ! is_null($host) || ! is_null($port)) {
 			self::$instance = new \Memcached();
-			self::$instance->addServer($host_, (int)$port_);
+			self::$instance->addServer($host, (int)$port);
 		}
 
 		return self::$instance;
